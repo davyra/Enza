@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+@import url(https://fonts.googleapis.com/earlyaccess/opensanshebrew.css);
+@import url(https://fonts.googleapis.com/earlyaccess/opensanshebrewcondensed.css);
+
+.main-page {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+
+    span {
+        color: #009f96;
+    }
+
+    h2 {
+        font-family: 'Istok Web', sans-serif;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 46px;
+        text-align: center;
+        margin: 0;
+    }
+
+    h3 {
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 39px;
+        color: #009f96;
+    }
+
+    .background {
+        width: 100%;
+        height: 736px;
+        object-fit: cover;
+        object-position: center;
+        margin-bottom: 64px;
+    }
+
+    .myButton {
+        display: block;
+        margin: 0 auto 64px;
+    }
+
+    .our-photos {
+        max-width: 1204px;
+        margin: auto;
+        margin-bottom: 40px;
+        display: flex;
+        gap: 8px;
+
+        .two-img {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .big {
+            width: 403px;
+            height: 732px;
+        }
+
+        .small {
+            width: 382px;
+            height: 360px;
+        }
+
+        .img-container {
+            position: relative;
+
+            .text {
+                width: 60%;
+                position: absolute;
+
+                font-family: 'Open Sans Hebrew', serif;
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 33px;
+                color: white;
+
+                padding-bottom: 2px;
+                text-align: end;
+                border-bottom: 3px solid #009f96;
+                bottom: 30px;
+            }
+        }
+    }
+
+    .collection {
+        background: #f0f0f0;
+        padding-top: 77px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+
+        .serpentine {
+            display: flex;
+            max-width: 1204px;
+            margin-bottom: 82px;
+
+            .snake {
+                position: relative;
+                margin-right: 183px;
+                height: 380px;
+            }
+
+            .snake-logo {
+                position: absolute;
+                left: 215px;
+                top: 110px;
+            }
+        }
+    }
+}
