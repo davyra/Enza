@@ -2,6 +2,12 @@ import './style.scss'
 import MyButton from '/src/components/MyButton/MyButton'
 import Swiper from '../../components/Swiper/Swiper'
 import Hand from '../../assets/mainBack.png'
+import Earrings from '../../assets/earrings.png'
+import Bracelets from '../../assets/braceletes.png'
+import Rings from '../../assets/rings.png'
+import Neckless from '../../assets/neckless.png'
+import Snake from '../../assets/snake.png'
+import SnakeLogo from '../../assets/snake-black.svg'
 
 const MainPage = () => {
     return (
@@ -11,21 +17,21 @@ const MainPage = () => {
 
             <div className="our-photos">
                 <div class="img-container big">
-                    <img src="./src/assets/earrings.png" alt="earrings" className="big" />
+                    <img src={Earrings} alt="earrings" className="big" />
                     <div className="text">Earrings</div>
                 </div>
                 <div class="two-img">
                     <div class="img-container small">
-                        <img src="./src/assets/braceletes.png" alt="bracelets" className="small" />
+                        <img src={Bracelets} alt="bracelets" className="small" />
                         <div className="text">Bracelets</div>
                     </div>
                     <div class="img-container small">
-                        <img src="./src/assets/rings.png" alt="rings" className="small" />
+                        <img src={Rings} alt="rings" className="small" />
                         <div className="text">Rings</div>
                     </div>
                 </div>
                 <div class="img-container big">
-                    <img src="./src/assets/neckless.png" alt="neckless" className="big" />
+                    <img src={Neckless} alt="neckless" className="big" />
                     <div className="text">Neckless</div>
                 </div>
             </div>
@@ -39,8 +45,8 @@ const MainPage = () => {
             <div className="collection">
                 <div className="serpentine">
                     <div className="snake">
-                        <img src="./src/assets/snake.png" alt="Snake" width={429} height={380}></img>
-                        <img src="./src/assets/snake-black.svg" alt="Snake" className="snake-logo"></img>
+                        <img src={Snake} alt="Snake" width={429} height={380}></img>
+                        <img src={SnakeLogo} alt="Snake" className="snake-logo"></img>
                     </div>
                     <div>
                         <h3>Serpentine Elegance </h3>

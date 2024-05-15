@@ -3,6 +3,10 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import { useRef, useState } from 'react'
 import Slider from 'react-slick'
+import Ring1 from '../../assets/slider/ring1.png'
+import Ring2 from '../../assets/slider/ring2.png'
+import Ring3 from '../../assets/slider/ring3.png'
+import Ring4 from '../../assets/slider/ring4.png'
 
 const Swiper = () => {
     const [count, setCount] = useState(1)
@@ -35,16 +39,16 @@ const Swiper = () => {
                 {...settings}
             >
                 <div className="wrapper" key={1}>
-                    <img src="./src/assets/slider/ring1.png" alt="Ring" width={409} height={641}></img>
+                    <img src={Ring1} alt="Ring" width={409} height={641}></img>
                 </div>
                 <div className="wrapper" key={2}>
-                    <img src="./src/assets/slider/ring2.png" alt="Ring" width={409} height={641}></img>
+                    <img src={Ring2} alt="Ring" width={409} height={641}></img>
                 </div>
                 <div className="wrapper" key={3}>
-                    <img src="./src/assets/slider/ring3.png" alt="Neckless" width={409} height={641}></img>
+                    <img src={Ring3} alt="Neckless" width={409} height={641}></img>
                 </div>
                 <div className="wrapper" key={4}>
-                    <img src="./src/assets/slider/ring4.png" alt="Neckless" width={409} height={641}></img>
+                    <img src={Ring4} alt="Neckless" width={409} height={641}></img>
                 </div>
             </Slider>
             <div style={{ textAlign: 'center' }}>
