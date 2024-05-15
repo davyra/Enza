@@ -35,16 +35,16 @@ const Swiper = () => {
                 {...settings}
             >
                 <div className="wrapper" key={1}>
-                    <img src="/src/assets/slider/ring1.png" alt="Ring" width={409} height={641}></img>
+                    <img src="./src/assets/slider/ring1.png" alt="Ring" width={409} height={641}></img>
                 </div>
                 <div className="wrapper" key={2}>
-                    <img src="/src/assets/slider/ring2.png" alt="Ring" width={409} height={641}></img>
+                    <img src="./src/assets/slider/ring2.png" alt="Ring" width={409} height={641}></img>
                 </div>
                 <div className="wrapper" key={3}>
-                    <img src="/src/assets/slider/ring3.png" alt="Neckless" width={409} height={641}></img>
+                    <img src="./src/assets/slider/ring3.png" alt="Neckless" width={409} height={641}></img>
                 </div>
                 <div className="wrapper" key={4}>
-                    <img src="/src/assets/slider/ring4.png" alt="Neckless" width={409} height={641}></img>
+                    <img src="./src/assets/slider/ring4.png" alt="Neckless" width={409} height={641}></img>
                 </div>
             </Slider>
             <div style={{ textAlign: 'center' }}>
