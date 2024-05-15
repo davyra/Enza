@@ -9,7 +9,36 @@ import Neckless from '../../assets/neckless.png'
 import Snake from '../../assets/snake.png'
 import SnakeLogo from '../../assets/snake-black.svg'
 
+import Ring2 from '../../assets/slider/ring2.png'
+import Ring3 from '../../assets/slider/ring3.png'
+import Ring4 from '../../assets/slider/ring4.png'
+
+import Group from '../../components/Group/Group'
+
 const MainPage = () => {
+    const photoForBest = [
+        {
+            cost: 100,
+            text: 'Enigma Coil Bracelet',
+            photo: '/Enigma.png'
+        },
+        {
+            cost: 150,
+            text: 'Enchanted Necklace',
+            photo: '/Enchanted.png'
+        },
+        {
+            cost: 100,
+            text: 'Whispering Breeze Ring',
+            photo: '/Whispering.png'
+        },
+        {
+            cost: 200,
+            text: 'Luna Drops',
+            photo: '/Luna.png'
+        }
+    ]
+
     return (
         <div className="main-page">
             <img src={Hand} alt="Hand" className="background"></img>
@@ -48,7 +77,7 @@ const MainPage = () => {
                         <img src={Snake} alt="Snake" width={429} height={380}></img>
                         <img src={SnakeLogo} alt="Snake" className="snake-logo"></img>
                     </div>
-                    <div>
+                    <div className="elegance">
                         <h3>Serpentine Elegance </h3>
                         The Serpentine Elegance collection captures the mesmerizing allure and mystique of the snake, symbolizing
                         transformation, rebirth, and eternal beauty. From delicate serpent-inspired necklaces and bracelets to
@@ -58,9 +87,44 @@ const MainPage = () => {
                     </div>
                 </div>
 
-                <div></div>
-                <Swiper />
+                <div className="text">
+                    <div className="line"></div>
+                    <span>WOMEN / MAN</span>
+                    <div className="line"></div>
+                </div>
+                <div className="gallery">
+                    <Swiper />
+                    <div className="right">
+                        <div className="photos">
+                            <div class="wrapper">
+                                <img src={Ring2} alt="ring2" />
+                            </div>
+                            <div class="wrapper">
+                                <img src={Ring3} alt="ring3" />
+                            </div>
+                            <div class="wrapper">
+                                <img src={Ring4} alt="ring4" />
+                            </div>
+                        </div>
+                        <div className="elegance">
+                            <h3>Serpent's Embrace Earrings</h3>
+                            The Silver Serpent Coil Earrings are a sleek and modern interpretation of the snake motif. Crafted
+                            from sterling silver, these earrings feature a coiled snake design that elegantly curves around the
+                            earlobe. The smooth, polished finish enhances the minimalist aesthetic, making them perfect for both
+                            casual and formal occasions. These earrings are a versatile and stylish addition to any jewelry
+                            collection, symbolizing wisdom, transformation, and renewal.
+                        </div>
+                    </div>
+                </div>
+
+                <MyButton style={{ marginTop: '40px' }}>EXPLORE</MyButton>
             </div>
+
+            <h2 style={{ marginBottom: '32px', marginTop: '57px' }}>BEST SELLER</h2>
+            <Group photos={photoForBest} />
+            <MyButton style={{ marginTop: '40px', marginBottom: '121px' }} className="myButton">
+                SHOP NOW
+            </MyButton>
         </div>
     )
 }

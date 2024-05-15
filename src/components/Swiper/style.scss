@@ -13,6 +13,28 @@
         box-sizing: border-box;
         width: 409px;
         height: 641px;
-        border: 1px solid #000000;
+    }
+
+    button {
+        background: transparent;
+        border: 0;
+        font-size: 16px;
+        line-height: 20px;
+        color: #5c5243;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    span {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: #5c5243;
+
+        .four {
+            color: #a29c94;
+        }
     }
 }

@@ -20,6 +20,11 @@ const Swiper = () => {
         sliderRef.slickPrev()
         setCount((prev) => prev - 1)
     }
+
+    const afterChangeHandler = (currentSlide) => {
+        setCount(currentSlide + 1)
+    }
+
     const settings = {
         dots: false,
         infinite: false,
@@ -27,7 +32,8 @@ const Swiper = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         adaptiveHeight: true,
-        arrows: false
+        arrows: false,
+        afterChange: afterChangeHandler
     }
 
     return (
@@ -51,11 +57,13 @@ const Swiper = () => {
                     <img src={Ring4} alt="Neckless" width={409} height={641}></img>
                 </div>
             </Slider>
-            <div style={{ textAlign: 'center' }}>
+            <div style={{ textAlign: 'center', marginTop: '24px' }}>
                 <button className="button" onClick={previous} disabled={count === 1}>
                     {'<'}
                 </button>
-                <span>{count}/4</span>
+                <span style={{ margin: '0 19px' }}>
+                    {count}/<span className="four">4</span>
+                </span>
                 <button className="button" onClick={next} disabled={count === 4}>
                     {'>'}
                 </button>
