@@ -1,11 +1,12 @@
 import './style.scss'
 import MyButton from '/src/components/MyButton/MyButton'
 import Swiper from '../../components/Swiper/Swiper'
+import Hand from '../../assets/mainBack.png'
 
 const MainPage = () => {
     return (
         <div className="main-page">
-            <img src="./src/assets/mainBack.png" alt="Hand" className="background"></img>
+            <img src={Hand} alt="Hand" className="background"></img>
             <h2 style={{ marginBottom: '26px' }}>Shop Our Collections</h2>
 
             <div className="our-photos">
