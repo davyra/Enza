@@ -5,26 +5,26 @@ import Swiper from '../../components/Swiper/Swiper'
 const MainPage = () => {
     return (
         <div className="main-page">
-            <img src="/src/assets/mainBack.png" alt="Hand" className="background"></img>
+            <img src="../../assets/mainBack.png" alt="Hand" className="background"></img>
             <h2 style={{ marginBottom: '26px' }}>Shop Our Collections</h2>
 
             <div className="our-photos">
                 <div class="img-container big">
-                    <img src="/src/assets/earrings.png" alt="earrings" className="big" />
+                    <img src="../../assets/earrings.png" alt="earrings" className="big" />
                     <div className="text">Earrings</div>
                 </div>
                 <div class="two-img">
                     <div class="img-container small">
-                        <img src="/src/assets/braceletes.png" alt="bracelets" className="small" />
+                        <img src="../../assets/braceletes.png" alt="bracelets" className="small" />
                         <div className="text">Bracelets</div>
                     </div>
                     <div class="img-container small">
-                        <img src="/src/assets/rings.png" alt="rings" className="small" />
+                        <img src="../../assets/rings.png" alt="rings" className="small" />
                         <div className="text">Rings</div>
                     </div>
                 </div>
                 <div class="img-container big">
-                    <img src="/src/assets/neckless.png" alt="neckless" className="big" />
+                    <img src="../../assets/neckless.png" alt="neckless" className="big" />
                     <div className="text">Neckless</div>
                 </div>
             </div>
@@ -38,8 +38,8 @@ const MainPage = () => {
             <div className="collection">
                 <div className="serpentine">
                     <div className="snake">
-                        <img src="/src/assets/snake.png" alt="Snake" width={429} height={380}></img>
-                        <img src="/src/assets/snake-black.svg" alt="Snake" className="snake-logo"></img>
+                        <img src="../../assets/snake.png" alt="Snake" width={429} height={380}></img>
+                        <img src="../../assets/snake-black.svg" alt="Snake" className="snake-logo"></img>
                     </div>
                     <div>
                         <h3>Serpentine Elegance </h3>
