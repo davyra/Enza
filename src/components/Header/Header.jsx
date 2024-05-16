@@ -1,6 +1,5 @@
 import './style.scss'
-import Search from '/src/assets/search.svg'
-import { ReactComponent as Shopping } from '/src/assets/shopping.svg'
+import Shopping from '/src/assets/shopping.svg?react'
 import { useNavigate } from 'react-router-dom'
 import { PRODUCTS_ROUTE, BASKET_ROUTE, MAIN_ROUTE, CONTACT_ROUTE } from '../../utils/routes'
 
@@ -20,8 +19,7 @@ const Header = () => {
                     </div>
                 </div>
                 <div className="icons">
-                    {/* <img src={Search} alt="Search icon" /> */}
-                    <Shopping alt="Shopping icon" onClick={() => navigate(BASKET_ROUTE)} />
+                    <Shopping className="colored-svg" onClick={() => navigate(BASKET_ROUTE)} />
                 </div>
             </div>
         </div>

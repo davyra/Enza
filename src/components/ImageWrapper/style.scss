@@ -2,6 +2,12 @@
     text-align: left;
     display: flex;
     flex-direction: column;
+    transition: all 0.3s linear;
+
+    &:hover {
+        cursor: pointer;
+        opacity: 30%;
+    }
 
     p {
         margin: 16px 0;
