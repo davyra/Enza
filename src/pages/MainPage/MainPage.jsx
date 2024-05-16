@@ -14,8 +14,12 @@ import Ring3 from '../../assets/slider/ring3.png'
 import Ring4 from '../../assets/slider/ring4.png'
 
 import Group from '../../components/Group/Group'
+import { useNavigate } from 'react-router-dom'
+import {PRODUCTS_ROUTE} from '../../utils/routes'
 
 const MainPage = () => {
+    const navigate = useNavigate()
+
     const photoForBest = [
         {
             cost: 100,
@@ -122,7 +126,7 @@ const MainPage = () => {
 
             <h2 style={{ marginBottom: '32px', marginTop: '57px' }}>BEST SELLER</h2>
             <Group photos={photoForBest} />
-            <MyButton style={{ marginTop: '40px', marginBottom: '121px' }} className="myButton">
+            <MyButton style={{ marginTop: '40px', marginBottom: '121px' }} className="myButton" onClick={() => navigate(PRODUCTS_ROUTE)}>
                 SHOP NOW
             </MyButton>
         </div>

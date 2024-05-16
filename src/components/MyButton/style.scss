@@ -16,6 +16,13 @@
     height: 46px;
 
     background: #474541;
+
+    transition: all 0.4s;
+
+    &:hover {
+        opacity: 50%;
+        cursor: pointer;
+    }
 }
 
 .myButton-primary {
