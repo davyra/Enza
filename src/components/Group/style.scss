@@ -11,22 +11,4 @@
     font-size: 18px;
     font-weight: 500;
     line-height: 22px;
-
-    .group {
-        text-align: left;
-        display: flex;
-        flex-direction: column;
-
-        img {
-            width: 297px;
-            height: 363px;
-        }
-
-        p {
-            margin: 16px 0;
-            font-size: 20px;
-            font-weight: 300;
-            line-height: 24px;
-        }
-    }
 }

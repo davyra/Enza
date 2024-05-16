@@ -45,16 +45,16 @@ const Swiper = () => {
                 {...settings}
             >
                 <div className="wrapper" key={1}>
-                    <img src={Ring1} alt="Ring" width={409} height={641}></img>
+                    <img src={Ring1} alt="Ring" width={409} height={639}></img>
                 </div>
                 <div className="wrapper" key={2}>
-                    <img src={Ring2} alt="Ring" width={409} height={641}></img>
+                    <img src={Ring2} alt="Ring" width={409} height={639}></img>
                 </div>
                 <div className="wrapper" key={3}>
-                    <img src={Ring3} alt="Neckless" width={409} height={641}></img>
+                    <img src={Ring3} alt="Neckless" width={409} height={639}></img>
                 </div>
                 <div className="wrapper" key={4}>
-                    <img src={Ring4} alt="Neckless" width={409} height={641}></img>
+                    <img src={Ring4} alt="Neckless" width={409} height={639}></img>
                 </div>
             </Slider>
             <div style={{ textAlign: 'center', marginTop: '24px' }}>

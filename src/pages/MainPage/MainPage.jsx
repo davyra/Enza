@@ -1,7 +1,7 @@
 import './style.scss'
 import MyButton from '/src/components/MyButton/MyButton'
 import Swiper from '../../components/Swiper/Swiper'
-import Hand from '../../assets/mainBack.png'
+import Hand from '../../assets/mainBack.jpg'
 import Earrings from '../../assets/earrings.png'
 import Bracelets from '../../assets/braceletes.png'
 import Rings from '../../assets/rings.png'
@@ -15,7 +15,7 @@ import Ring4 from '../../assets/slider/ring4.png'
 
 import Group from '../../components/Group/Group'
 import { useNavigate } from 'react-router-dom'
-import {PRODUCTS_ROUTE} from '../../utils/routes'
+import { PRODUCTS_ROUTE } from '../../utils/routes'
 
 const MainPage = () => {
     const navigate = useNavigate()
@@ -69,7 +69,9 @@ const MainPage = () => {
                 </div>
             </div>
 
-            <MyButton className="myButton">VIEW ALL</MyButton>
+            <MyButton className="myButton" onClick={() => navigate(PRODUCTS_ROUTE)}>
+                VIEW ALL
+            </MyButton>
 
             <h2 style={{ marginBottom: '26px' }}>
                 <span style={{ fontWeight: 700 }}>NEW</span> COLLECTION
@@ -101,13 +103,13 @@ const MainPage = () => {
                     <div className="right">
                         <div className="photos">
                             <div class="wrapper">
-                                <img src={Ring2} alt="ring2" />
+                                <img src={Ring2} alt="ring2" width={244} height={366} />
                             </div>
                             <div class="wrapper">
-                                <img src={Ring3} alt="ring3" />
+                                <img src={Ring3} alt="ring3" width={244} height={366} />
                             </div>
                             <div class="wrapper">
-                                <img src={Ring4} alt="ring4" />
+                                <img src={Ring4} alt="ring4" width={244} height={366} />
                             </div>
                         </div>
                         <div className="elegance">
@@ -121,12 +123,18 @@ const MainPage = () => {
                     </div>
                 </div>
 
-                <MyButton style={{ marginTop: '40px' }}>EXPLORE</MyButton>
+                <MyButton style={{ marginTop: '40px' }} onClick={() => navigate(PRODUCTS_ROUTE, { state: 'new' })}>
+                    EXPLORE
+                </MyButton>
             </div>
 
             <h2 style={{ marginBottom: '32px', marginTop: '57px' }}>BEST SELLER</h2>
             <Group photos={photoForBest} />
-            <MyButton style={{ marginTop: '40px', marginBottom: '121px' }} className="myButton" onClick={() => navigate(PRODUCTS_ROUTE)}>
+            <MyButton
+                style={{ marginTop: '40px', marginBottom: '121px' }}
+                className="myButton"
+                onClick={() => navigate(PRODUCTS_ROUTE)}
+            >
                 SHOP NOW
             </MyButton>
         </div>

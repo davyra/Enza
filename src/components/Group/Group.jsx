@@ -1,5 +1,6 @@
 import './style.scss'
 import { useState, useEffect } from 'react'
+import ImageWrapper from '../ImageWrapper/ImageWrapper'
 
 const Group = ({ photos }) => {
     const [windowWidth, setWindowWidth] = useState(window.innerWidth)
@@ -21,11 +22,7 @@ const Group = ({ photos }) => {
     return (
         <div className="group-component">
             {displayPhotos.map((el, index) => (
-                <div className="group" key={index}>
-                    <img key={index} src={el.photo} alt={`Photo ${index}`} />
-                    <p>{el.text}</p>
-                    <span style={{ color: '#000' }}>{el.cost}$</span>
-                </div>
+                <ImageWrapper el={el} key={index} width={297} height={363} />
             ))}
         </div>
     )
