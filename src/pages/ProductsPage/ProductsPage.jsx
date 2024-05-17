@@ -69,7 +69,7 @@ const ProductsPage = () => {
             <div className="filters">
                 <span className="fil">Filter by:</span>
                 <MySelect
-                    width={238}
+                    width={208}
                     placeholder={placeholderCollections}
                     currentFilter={currentFilterCollections}
                     options={optionsCollections}

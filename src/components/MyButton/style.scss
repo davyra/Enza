@@ -26,14 +26,16 @@
 }
 
 .myButton-primary {
-    width: 148px;
-    color: #fff;
-    justify-content: center;
-    padding: 0;
-    transition: all 0.4s;
+    box-sizing: border-box;
+
+    border: 1px solid #000000;
+    max-width: 383px;
+    color: #474541;
+    background: white;
 
     &:hover {
-        opacity: 50%;
+        background: #474541;
+        color: #fff;
         cursor: pointer;
     }
 }
