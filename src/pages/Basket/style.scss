@@ -5,6 +5,7 @@
     max-width: 1200px;
     margin: 80px auto 120px;
     font-family: 'Montserrat', sans-serif;
+    font-style: normal;
     font-weight: 400;
     color: #000000;
 
@@ -124,6 +125,235 @@
                         line-height: 22px;
 
                         color: rgba(12, 1, 1, 0.53);
+                    }
+                }
+            }
+        }
+    }
+
+    .stepTwo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        font-size: 24px;
+        line-height: 29px;
+        color: #2f2a20;
+
+        .head {
+            display: flex;
+            align-items: center;
+            margin-bottom: 139px;
+
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 22px;
+
+            img {
+                margin: 0 7px;
+            }
+
+            hr {
+                width: 212px;
+                height: 0px;
+
+                border: 1px solid #009f96;
+            }
+
+            .one {
+                position: relative;
+                margin: 0 7px;
+
+                &::before {
+                    content: 'Costumer details';
+                    width: 152px;
+                    position: absolute;
+                    bottom: -40px;
+                    left: -57px;
+                }
+            }
+
+            .two {
+                position: relative;
+                &::before {
+                    content: 'Payment method';
+                    width: 168px;
+                    position: absolute;
+                    bottom: -41px;
+                    left: -55px;
+                }
+            }
+
+            .three {
+                position: relative;
+
+                &::before {
+                    content: 'Confirmation';
+                    width: 152px;
+                    position: absolute;
+                    bottom: -43px;
+                    left: -35px;
+                }
+            }
+        }
+
+        .options {
+            display: flex;
+            justify-content: space-between;
+            width: 551px;
+            margin-bottom: 91px;
+
+            .pay {
+                display: flex;
+                align-items: center;
+
+                input[type='radio'] {
+                    width: 21px;
+                    height: 21px;
+                    margin: 0;
+                    margin-right: 10px;
+
+                    &:checked {
+                        background-color: #009f96;
+                        border-color: #009f96;
+                    }
+                }
+            }
+        }
+
+        .content {
+            .inputs {
+                display: flex;
+                flex-direction: column;
+                gap: 32px;
+                margin-bottom: 96px;
+
+                .wrapper {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 802px;
+                    height: 33px;
+
+                    input {
+                        box-sizing: border-box;
+
+                        height: 33px;
+                        background: rgba(217, 217, 217, 0.31);
+                        border: 0.5px solid #000000;
+
+                        font-weight: 300;
+                        font-size: 18px;
+                        line-height: 22px;
+                        color: rgba(12, 1, 1, 0.53);
+                        padding-left: 11px;
+                    }
+                }
+            }
+
+            .sum {
+                display: flex;
+                flex-direction: column;
+
+                hr {
+                    margin: 0;
+                    width: 782px;
+                    height: 0px;
+                    border: 1px solid #009f96;
+                }
+
+                .text {
+                    max-width: 782px;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 22px;
+                    font-size: 20px;
+                    line-height: 24px;
+
+                    span {
+                        font-weight: 500;
+                        font-size: 24px;
+                        line-height: 29px;
+                        color: #2f2a20;
+                    }
+                }
+            }
+        }
+    }
+
+    .stepThree {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 200px;
+
+        .head {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+            margin-bottom: 32px;
+
+            .title {
+                font-weight: 500;
+                font-size: 32px;
+                line-height: 39px;
+                color: #2f2a20;
+                margin-left: 30px;
+                margin-bottom: 3px;
+            }
+        }
+
+        hr {
+            margin: 0 auto;
+            width: 739px;
+            height: 0px;
+            border: 1px solid #009f96;
+        }
+
+        .sum {
+            display: flex;
+            flex-direction: column;
+            max-width: 715px;
+            margin: auto;
+
+            .text {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 24px;
+
+                font-size: 20px;
+                line-height: 24px;
+
+                span {
+                    font-weight: 500;
+                    color: #2f2a20;
+                }
+            }
+        }
+
+        .list {
+            margin-top: 37px;
+            margin-left: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 13px;
+
+            .wrapper {
+                display: flex;
+
+                .text {
+                    margin-left: 18px;
+                    font-size: 16px;
+                    line-height: 20px;
+
+                    p {
+                        margin: 0;
+                        margin-bottom: 16px;
+
+                        font-family: 'Istok Web', sans-serif;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 23px;
+                        color: #2f2a20;
                     }
                 }
             }
