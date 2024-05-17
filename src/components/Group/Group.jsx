@@ -22,7 +22,7 @@ const Group = ({ photos }) => {
     return (
         <div className="group-component">
             {displayPhotos.map((el, index) => (
-                <ImageWrapper el={el} key={index} width={297} height={363} />
+                <ImageWrapper el={el} key={index} num={index} width={297} height={363} />
             ))}
         </div>
     )

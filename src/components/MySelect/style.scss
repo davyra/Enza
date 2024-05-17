@@ -1,3 +1,22 @@
-.my-select-component{
-    
+.custom-select {
+    & .react-select__control {
+        border: 0;
+        background-color: transparent;
+        box-shadow: none;
+        display: flex;
+        align-items: center;
+        padding-left: 8px;
+    }
+
+    & .react-select__value-container {
+        padding: 0 !important;
+    }
+
+    & .react-select__indicator-separator {
+        display: none;
+    }
+
+    & .react-select__single-value {
+        margin: 0 !important;
+    }
 }

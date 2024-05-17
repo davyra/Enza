@@ -24,22 +24,22 @@ const MainPage = () => {
         {
             cost: 100,
             text: 'Enigma Coil Bracelet',
-            photo: '/Enigma.png'
+            image: '/17.png'
         },
         {
             cost: 150,
             text: 'Enchanted Necklace',
-            photo: '/Enchanted.png'
+            image: '/18.png'
         },
         {
             cost: 100,
             text: 'Whispering Breeze Ring',
-            photo: '/Whispering.png'
+            image: '/19.png'
         },
         {
             cost: 200,
             text: 'Luna Drops',
-            photo: '/Luna.png'
+            image: '/20.png'
         }
     ]
 
@@ -49,21 +49,21 @@ const MainPage = () => {
             <h2 style={{ marginBottom: '26px' }}>Shop Our Collections</h2>
 
             <div className="our-photos">
-                <div class="img-container big">
+                <div className="img-container big">
                     <img src={Earrings} alt="earrings" className="big" />
                     <div className="text">Earrings</div>
                 </div>
-                <div class="two-img">
-                    <div class="img-container small">
+                <div className="two-img">
+                    <div className="img-container small">
                         <img src={Bracelets} alt="bracelets" className="small" />
                         <div className="text">Bracelets</div>
                     </div>
-                    <div class="img-container small">
+                    <div className="img-container small">
                         <img src={Rings} alt="rings" className="small" />
                         <div className="text">Rings</div>
                     </div>
                 </div>
-                <div class="img-container big">
+                <div className="img-container big">
                     <img src={Neckless} alt="neckless" className="big" />
                     <div className="text">Neckless</div>
                 </div>
@@ -102,13 +102,13 @@ const MainPage = () => {
                     <Swiper />
                     <div className="right">
                         <div className="photos">
-                            <div class="wrapper">
+                            <div className="wrapper">
                                 <img src={Ring2} alt="ring2" width={244} height={366} />
                             </div>
-                            <div class="wrapper">
+                            <div className="wrapper">
                                 <img src={Ring3} alt="ring3" width={244} height={366} />
                             </div>
-                            <div class="wrapper">
+                            <div className="wrapper">
                                 <img src={Ring4} alt="ring4" width={244} height={366} />
                             </div>
                         </div>
