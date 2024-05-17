@@ -13,7 +13,6 @@ const Basket = ({}) => {
 
     const [step, setStep] = useState(1)
 
-    console.log(total)
     const handleRemoveItem = (id) => {
         dispatch(removeItem(id))
     }

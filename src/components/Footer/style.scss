@@ -1,5 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
 .footer-component {
     height: 534px;
     width: 100%;
     background-color: #dadadc;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+
+    padding-top: 64px;
+
+    .main {
+        display: flex;
+        max-width: 1200px;
+        margin: auto;
+        justify-content: space-between;
+
+        .name {
+            margin-bottom: 32px;
+
+            font-family: 'Istok Web', sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 29px;
+            color: #5c5243;
+        }
+
+        p {
+            margin-bottom: 18px;
+        }
+
+        .list {
+            display: flex;
+            width: 744px;
+            justify-content: space-between;
+        }
+
+        .sub {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            input {
+                box-sizing: border-box;
+                width: 256px;
+                height: 31px;
+                border: 1px solid #000000;
+
+                font-weight: 500;
+                color: rgba(12, 1, 1, 0.53);
+            }
+        }
+    }
 }
