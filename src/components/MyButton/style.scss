@@ -39,3 +39,20 @@
         cursor: pointer;
     }
 }
+
+.myButton-secondary {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    text-underline-offset: 2px;
+    color: #676262;
+    background: transparent;
+    width: 92px;
+
+    &:hover {
+        background: #474541;
+        color: #fff;
+        cursor: pointer;
+    }
+}

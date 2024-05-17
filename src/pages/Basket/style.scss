@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+.cart-page {
+    max-width: 1200px;
+    margin: 80px auto 120px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #000000;
+
+    .stepOne {
+        h1 {
+            margin: 64px 0 32px;
+            text-align: center;
+            font-family: 'Istok Web', sans-serif;
+            font-size: 32px;
+            line-height: 46px;
+            color: #594e3e;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+
+            .list {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 32px;
+
+                .product {
+                    display: flex;
+                    justify-content: center;
+
+                    .text {
+                        margin-left: 17px;
+                        font-size: 20px;
+                        line-height: 24px;
+
+                        .name {
+                            font-family: 'Istok Web', sans-serif;
+                            font-size: 24px;
+                            line-height: 35px;
+                            color: #2f2a20;
+                            margin: 0;
+                        }
+
+                        .cost {
+                            margin: 16px 0 56px;
+                        }
+
+                        .material {
+                            font-size: 18px;
+                            line-height: 22px;
+                            text-decoration: underline;
+                            text-underline-offset: 2px;
+                        }
+
+                        hr {
+                            width: 485px;
+                            height: 0px;
+                            border: 1px solid #009f96;
+                        }
+
+                        .under {
+                            text-decoration: underline;
+                            text-underline-offset: 3px;
+                        }
+                    }
+                }
+            }
+
+            .sum {
+                display: flex;
+                flex-direction: column;
+
+                hr {
+                    width: 430px;
+                    height: 0px;
+                    border: 1px solid #009f96;
+                }
+
+                h3 {
+                    font-weight: 500;
+                    font-size: 26px;
+                    line-height: 32px;
+                    text-align: center;
+
+                    margin-bottom: 9px;
+                    margin-top: 0;
+
+                    color: #2f2a20;
+                }
+
+                .text {
+                    max-width: 430px;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 30px;
+
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 22px;
+
+                    span {
+                        font-family: 'Istok Web', sans-serif;
+                        font-weight: 400;
+                        font-size: 24px;
+                        line-height: 35px;
+                        color: #2f2a20;
+                    }
+
+                    input {
+                        box-sizing: border-box;
+
+                        width: 235px;
+                        height: 46px;
+                        padding-left: 10px;
+                        background: rgba(217, 217, 217, 0.31);
+                        border: 1px solid #000000;
+
+                        font-weight: 300;
+                        font-size: 18px;
+                        line-height: 22px;
+
+                        color: rgba(12, 1, 1, 0.53);
+                    }
+                }
+            }
+        }
+    }
+}
