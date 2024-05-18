@@ -4,7 +4,7 @@ import MyButton from '/src/components/MyButton/MyButton'
 import { PRODUCTS_ROUTE } from '../../utils/routes'
 
 import { useDispatch, useSelector } from 'react-redux'
-import { removeItem } from '../../store/cartSlice'
+import { removeItem, clearCart } from '../../store/cartSlice'
 
 import Pal from '/src/assets/pay.png'
 import Google from '/src/assets/gogle.png'
@@ -215,7 +215,10 @@ const Basket = ({}) => {
 
                     <MyButton
                         style={{ display: 'block', width: '230px', margin: '40px auto 0' }}
-                        onClick={() => navigate(PRODUCTS_ROUTE)}
+                        onClick={() => {
+                            navigate(PRODUCTS_ROUTE)
+                            dispatch(clearCart())
+                        }}
                     >
                         CONTINUE SHOPPING
                     </MyButton>
